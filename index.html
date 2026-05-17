@@ -7,23 +7,19 @@
 <style>
   body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f8; color:#1a1a1a; }
   header { background:#0d1b2a; color:#fff; padding:40px 20px; text-align:center; }
-  header h1 { margin:0; font-size:2.5em; }
-  header p { font-size:1.2em; margin-top:10px; }
-
+  header h1 { margin:0; font-size:2em; }
+  header p { font-size:1.1em; margin-top:5px; }
   nav { background:#1b263b; display:flex; justify-content:center; flex-wrap: wrap; padding:10px 0; }
   nav a { color:#fff; text-decoration:none; margin:5px 15px; font-weight:bold; }
   nav a:hover { color:#4da6ff; }
-
   section { padding:60px 20px; max-width:1000px; margin:0 auto; }
   h2 { color:#0d1b2a; font-size:2em; margin-bottom:20px; }
-
-  .banner { width:100%; max-height:400px; object-fit:cover; margin-bottom:20px; border-radius:10px; }
   .card { background:#fff; padding:25px; margin-bottom:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
   .card ul { margin-left:20px; }
-
+  .livro-img, .artigo-img { width:200px; height:auto; border-radius:8px; cursor:pointer; transition: transform 0.2s; }
+  .livro-img:hover, .artigo-img:hover { transform: scale(1.05); }
   a.button { display:inline-block; background:#0d1b2a; color:#fff; padding:12px 25px; text-decoration:none; border-radius:8px; margin-top:15px; transition:0.3s; }
   a.button:hover { background:#4da6ff; }
-
   footer { background:#1b263b; color:#fff; text-align:center; padding:20px; }
 </style>
 </head>
@@ -31,7 +27,7 @@
 
 <header>
   <h1>Gean AP</h1>
-  <p>Tecnólogo, Escritor e Criador do ORIOM Desktop V2</p>
+  <p>ORIOM & Livros</p>
 </header>
 
 <nav>
@@ -44,7 +40,7 @@
 <!-- ORIOM Section -->
 <section id="oriom">
   <h2>ORIOM Desktop V2 – Sistema Laboratorial Inteligente</h2>
-  <img src="7b5f9eb2-28b4-4654-854f-46a4467bf58c.png" alt="Banner ORIOM" class="banner">
+  <img src="7b5f9eb2-28b4-4654-854f-46a4467bf58c.png" alt="Banner ORIOM" class="livro-img">
   <div class="card">
     <p>O ORIOM Desktop V2 é um sistema de automação e análise laboratorial que facilita:</p>
     <ul>
@@ -53,7 +49,6 @@
       <li>Controle estatístico de qualidade</li>
       <li>Integração futura com Inteligência Artificial</li>
     </ul>
-    <p>Projetado para laboratórios de química, controle de qualidade e processos industriais, o ORIOM combina tecnologia, precisão e inovação em um único software.</p>
     <a href="#" class="button">Saiba Mais sobre ORIOM</a>
   </div>
 </section>
@@ -61,15 +56,18 @@
 <!-- Livros Section -->
 <section id="livros">
   <h2>Livros e Narrativas</h2>
-  <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b_0_MiriCanvas.png" alt="Livros" class="banner">
   <div class="card">
+    <a href="Amante_do_Amanha.pdf" target="_blank">
+      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b_0_MiriCanvas.png"
+           alt="Amante do Amanhã" 
+           class="livro-img">
+    </a>
     <p>Sou autor de obras literárias que exploram suspense, horror psicológico e reflexões filosóficas. Entre meus livros:</p>
     <ul>
-      <li><strong>O Terapeuta das Almas</strong> – suspense psicológico e jornadas da mente humana</li>
-      <li><strong>Amante do Amanhã</strong> – poesia, reflexão e narrativa filosófica</li>
-      <li>Capítulos e trechos de contos que exploram emoção, consciência e decisões humanas</li>
+      <li><strong>O Terapeuta das Almas</strong></li>
+      <li><strong>Amante do Amanhã</strong></li>
     </ul>
-    <a href="#" class="button">Ver Livros</a>
+    <a href="Amante_do_Amanha.pdf" class="button" target="_blank">Abrir PDF</a>
   </div>
 </section>
 
@@ -77,13 +75,11 @@
 <section id="artigos">
   <h2>Artigos e Ensaios</h2>
   <div class="card">
-    <p>Aqui compartilho textos de filosofia, ciência e técnica, conectando teoria e prática:</p>
     <ul>
-      <li>Filosofia da ciência aplicada a laboratórios</li>
-      <li>Ética e lógica na Inteligência Artificial</li>
-      <li>Tutoriais e guias técnicos para automação, análise de dados e controle de processos</li>
+      <li><a href="artigo1.pdf" target="_blank">Filosofia da ciência aplicada a laboratórios</a></li>
+      <li><a href="artigo2.pdf" target="_blank">Ética e lógica na Inteligência Artificial</a></li>
+      <li><a href="artigo3.pdf" target="_blank">Tutoriais e guias técnicos para automação</a></li>
     </ul>
-    <a href="#" class="button">Ver Artigos</a>
   </div>
 </section>
 
@@ -91,7 +87,6 @@
 <section id="contato">
   <h2>Fale comigo</h2>
   <div class="card">
-    <p>Se você deseja conhecer melhor o ORIOM, contratar serviços de redação e edição, ou discutir projetos literários e tecnológicos, entre em contato:</p>
     <ul>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/gean-ap" target="_blank">linkedin.com/in/gean-ap</a></li>
       <li>Freelancer.com: <a href="https://www.freelancer.com/u/geanap" target="_blank">Perfil Freelancer</a></li>
