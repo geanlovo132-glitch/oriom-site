@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gean AP – ORIOM & Livros</title>
 <style>
-  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f8; color:#1a1a1a; }
-  header { background:#0d1b2a; color:#fff; padding:40px 20px; text-align:center; }
-  header h1 { margin:0; font-size:2em; }
-  header p { font-size:1.1em; margin-top:5px; }
-  nav { background:#1b263b; display:flex; justify-content:center; flex-wrap: wrap; padding:10px 0; }
-  nav a { color:#fff; text-decoration:none; margin:5px 15px; font-weight:bold; }
-  nav a:hover { color:#4da6ff; }
-  section { padding:60px 20px; max-width:1000px; margin:0 auto; }
-  h2 { color:#0d1b2a; font-size:2em; margin-bottom:20px; }
-  .card { background:#fff; padding:25px; margin-bottom:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
-  .card ul { margin-left:20px; }
-  .livro-img, .artigo-img { width:200px; height:auto; border-radius:8px; cursor:pointer; transition: transform 0.2s; }
-  .livro-img:hover, .artigo-img:hover { transform: scale(1.05); }
-  a.button { display:inline-block; background:#0d1b2a; color:#fff; padding:12px 25px; text-decoration:none; border-radius:8px; margin-top:15px; transition:0.3s; }
-  a.button:hover { background:#4da6ff; }
-  footer { background:#1b263b; color:#fff; text-align:center; padding:20px; }
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f8; color:#1a1a1a; }
+header { background:#0d1b2a; color:#fff; padding:40px 20px; text-align:center; }
+header h1 { margin:0; font-size:2em; }
+header p { font-size:1.1em; margin-top:5px; }
+nav { background:#1b263b; display:flex; justify-content:center; flex-wrap: wrap; padding:10px 0; }
+nav a { color:#fff; text-decoration:none; margin:5px 15px; font-weight:bold; }
+nav a:hover { color:#4da6ff; }
+section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+h2 { color:#0d1b2a; font-size:2em; margin-bottom:20px; }
+.card { background:#fff; padding:25px; margin-bottom:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
+.card ul { margin-left:20px; }
+.pdf-img { width:200px; height:auto; border-radius:8px; cursor:pointer; transition: transform 0.2s; }
+.pdf-img:hover { transform: scale(1.05); }
+a.button { display:inline-block; background:#0d1b2a; color:#fff; padding:12px 25px; text-decoration:none; border-radius:8px; margin-top:15px; transition:0.3s; }
+a.button:hover { background:#4da6ff; }
+footer { background:#1b263b; color:#fff; text-align:center; padding:20px; }
+/* Responsivo */
+@media (max-width:600px){
+  .pdf-img { width:100%; max-width:180px; margin-bottom:10px; }
+}
 </style>
 </head>
 <body>
@@ -40,7 +44,7 @@
 <!-- ORIOM Section -->
 <section id="oriom">
   <h2>ORIOM Desktop V2 – Sistema Laboratorial Inteligente</h2>
-  <img src="7b5f9eb2-28b4-4654-854f-46a4467bf58c.png" alt="Banner ORIOM" style="width:100%; max-height:400px; object-fit:cover; border-radius:10px;">
+  <img src="7b5f9eb2-28b4-4654-854f-46a4467bf58c(1).png" alt="Banner ORIOM" style="width:100%; max-height:400px; object-fit:cover; border-radius:10px;">
   <div class="card">
     <p>O ORIOM Desktop V2 é um sistema de automação e análise laboratorial que facilita:</p>
     <ul>
@@ -49,7 +53,6 @@
       <li>Controle estatístico de qualidade</li>
       <li>Integração futura com Inteligência Artificial</li>
     </ul>
-    <a href="#" class="button">Saiba Mais sobre ORIOM</a>
   </div>
 </section>
 
@@ -57,15 +60,17 @@
 <section id="livros">
   <h2>Livros e Narrativas</h2>
   <div class="card">
-    <a href="Amante_do_Amanha.pdf" target="_blank">
-      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b_0_MiriCanvas.png" alt="Amante do Amanhã" class="livro-img">
+    <!-- Livro 1 -->
+    <a href="Amante do amnhã...(1).pdf" target="_blank">
+      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b(1).png" alt="Amante do Amanhã" class="pdf-img">
     </a>
-    <p>Sou autor de obras literárias que exploram suspense, horror psicológico e reflexões filosóficas. Entre meus livros:</p>
-    <ul>
-      <li><strong>O Terapeuta das Almas</strong></li>
-      <li><strong>Amante do Amanhã</strong></li>
-    </ul>
-    <a href="Amante_do_Amanha.pdf" class="button" target="_blank">Abrir PDF</a>
+    <a href="Amante do amnhã...(1).pdf" class="button" target="_blank">Abrir PDF</a>
+    <br><br>
+    <!-- Livro 2 -->
+    <a href="O terapeuta das almas .docx" target="_blank">
+      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b(1).png" alt="O Terapeuta das Almas" class="pdf-img">
+    </a>
+    <a href="O terapeuta das almas .docx" class="button" target="_blank">Abrir PDF</a>
   </div>
 </section>
 
@@ -73,11 +78,17 @@
 <section id="artigos">
   <h2>Artigos e Ensaios</h2>
   <div class="card">
-    <ul>
-      <li><a href="artigo1.pdf" target="_blank">Filosofia da ciência aplicada a laboratórios</a></li>
-      <li><a href="artigo2.pdf" target="_blank">Ética e lógica na Inteligência Artificial</a></li>
-      <li><a href="artigo3.pdf" target="_blank">Tutoriais e guias técnicos para automação</a></li>
-    </ul>
+    <!-- Artigo 1 -->
+    <a href="A guerra da criação.docx" target="_blank">
+      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b(1).png" alt="A Guerra da Criação" class="pdf-img">
+    </a>
+    <a href="A guerra da criação.docx" class="button" target="_blank">Abrir PDF</a>
+    <br><br>
+    <!-- Artigo 2 -->
+    <a href="A História do Átomo.docx" target="_blank">
+      <img src="AIDrawing_250831_562eba50-a773-43f0-97bc-462d1f0c100b(1).png" alt="A História do Átomo" class="pdf-img">
+    </a>
+    <a href="A História do Átomo.docx" class="button" target="_blank">Abrir PDF</a>
   </div>
 </section>
 
@@ -91,7 +102,6 @@
       <li>E-mail: gean-lovo@outlook.com</li>
       <li>WhatsApp: (xx) xxxx-xxxx</li>
     </ul>
-    <a href="mailto:gean-lovo@outlook.com" class="button">Enviar E-mail</a>
   </div>
 </section>
 
